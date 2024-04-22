@@ -107,7 +107,7 @@ a:hover {
 
 .paralax-mf {
   position: relative;
-  padding: 8rem 0;
+  padding: 3rem 0;
 }
 
 .display-table {
@@ -120,6 +120,11 @@ a:hover {
   display: table-cell;
   vertical-align: middle;
 }
+@media (min-width: 768px) {
+  .paralax-mf {
+    padding: 8rem 0;
+  }
+}
 
 /*--/ Sections /--*/
 .sect-4 {
@@ -127,11 +132,16 @@ a:hover {
 }
 
 .sect-pt4 {
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
 
 .sect-mt4 {
   margin-top: 4rem;
+}
+@media (min-width: 768px) {
+  .sect-pt4 {
+    padding-top: 4rem;
+  }
 }
 
 /*--/ Title s /--*/
@@ -143,7 +153,7 @@ a:hover {
 
 /*--/ Title A /--*/
 .title-box {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .title-a {
@@ -170,10 +180,15 @@ a:hover {
   /*font-size: 10px;*/
   font-weight: 400;
 }
+@media (min-width: 768px) {
+  .title-box {
+    margin-bottom: 4rem;
+  }
+}
 
 /*--/ Title Left /--*/
 .title-box-2 {
-  margin-bottom: 3rem;
+  margin-bottom: 1.7rem;
 }
 
 .title-left {
@@ -189,6 +204,12 @@ a:hover {
   bottom: -12px;
 }
 
+@media (min-width: 768px) {
+  .title-box-2 {
+  margin-bottom: 3rem;
+}
+}
+
 /*------/ Box /------*/
 .box-pl2 {
   padding-left: 2rem;
@@ -198,13 +219,13 @@ a:hover {
   padding: 3rem 1.25rem;
   position: relative;
   background-color: #fff;
-  margin-bottom: 3rem;
   z-index: 2;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 @media (min-width: 768px) {
   .box-shadow-full {
     padding: 3rem;
+    margin-bottom: 3rem;
   }
 }
 
@@ -460,7 +481,7 @@ a:hover {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -572,7 +593,7 @@ a:hover {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   color: #fff;
@@ -742,16 +763,20 @@ a:hover {
 # About
 --------------------------------------------------------------*/
 .about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
 }
 .about-mf .about-img {
   margin-bottom: 2rem;
 }
-.about-mf .about-img img {
-  margin-left: 10px;
-}
 @media (min-width: 767px) {
+  .about-mf .box-shadow-full {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .about-mf .about-img img {
+    margin-left: 10px;
+  }
   .about-mf .box-pl2 {
     margin-top: 3rem;
     padding-left: 0rem;
@@ -779,7 +804,7 @@ a:hover {
   background-color: #fff;
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 .service-box:hover .ico-circle {
@@ -812,12 +837,22 @@ a:hover {
   color: #4e4e4e;
 }
 
+@media (min-width: 768px) {
+  .service-box {
+    margin-bottom: 3rem;
+  }
+}
 /*--------------------------------------------------------------
 # Counter
 --------------------------------------------------------------*/
 .counter-box {
   color: #fff;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .counter-box {
+    padding-top: 40px !important;
+  }
 }
 @media (min-width: 577px) {
   .counter-box {
@@ -844,7 +879,7 @@ a:hover {
 # Portfolio
 --------------------------------------------------------------*/
 .work-box {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-color: #fff;
@@ -885,6 +920,12 @@ a:hover {
 
 .w-title {
   font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+  .work-box {
+    margin-bottom: 3rem;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1007,16 +1048,22 @@ a:hover {
 # Contact
 --------------------------------------------------------------*/
 .footer-paralax {
-  padding: 4rem 0 0 0;
+  padding: 2rem 0 0 0;
 }
 
 .contact-mf {
-  margin-top: 4rem;
+  margin-top: 1rem;
 }
 @media (min-width: 767px) {
+  .contact-mf {
+    margin-top: 4rem;
+  }
   .contact-mf .box-pl2 {
     margin-top: 3rem;
     padding-left: 0rem;
+  }
+  .footer-paralax {
+    padding: 4rem 0 0 0;
   }
 }
 
